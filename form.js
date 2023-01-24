@@ -12,7 +12,7 @@ function check()
     }
 
 
-    if(adhaarno.length==12)
+    if(adhaarno.length==12 && rationcard.length==10 && voterid.length==10)
     {
         fetch('https://form-78d91-default-rtdb.firebaseio.com/user.json',
         {
