@@ -3,8 +3,8 @@
 body{
     margin:0;
     padding:0;
-    background-color: #F4D03F;
-    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 46%);
+    background-color:yellow;
+    background-image: linear-gradient(to bottom,yellow, green);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -29,13 +29,12 @@ p{
 .signup
 {
     width: 280px;
-    border: 3px solid black;
     padding: 10px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 10px 10px 15px rgb(10, 9, 9);
+    box-shadow:  0px 0px 15px 5px black;
 }
 
 .btn
@@ -65,8 +64,12 @@ p{
     box-sizing: border-box;
     margin: 10px 0px;
     border-radius: 10px;
-    border: 1px solid green;
+    border: 1px solid black;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+}
+
+.inp:focus{
+    outline:none;
+    border: 1px solid green;
 }
 

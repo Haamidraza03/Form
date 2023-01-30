@@ -1,18 +1,20 @@
 function check()
 {
     let adhaarno=document.getElementById('adhaar').value;
+    let phno=document.getElementById('phone').value;
     let voterid=document.getElementById('voter').value;
     let rationcard=document.getElementById('ration').value;
 
 
     let user={
         adhaar:adhaarno,
+        phone:phno,
         voter:voterid,
         ration:rationcard
     }
 
 
-    if(adhaarno.length==12 && rationcard.length==10 && voterid.length==10)
+    if(adhaarno.length==12 && phno.length==10 && rationcard.length==10 && voterid.length==10)
     {
         fetch('https://form-78d91-default-rtdb.firebaseio.com/user.json',
         {
@@ -22,6 +24,7 @@ function check()
         {
             alert('Your Data is saved successfully.');
             document.getElementById('adhaar').value="";
+            document.getElementById('phone').value="";
             document.getElementById('voter').value="";
             document.getElementById('ration').value="";
         })      
