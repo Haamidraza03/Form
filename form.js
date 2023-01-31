@@ -29,7 +29,25 @@ function check()
             document.getElementById('ration').value="";
         })      
     }
-    else{
-        alert("Please fill all Details Properly.")
+    else if(adhaarno.length==0 && phno.length==0 && rationcard.length==0 && voterid.length==0)
+    {
+        alert("Please fill all the Details.")
     }
+    else if(adhaarno.length!=12)
+    {
+        alert("Adhaar Card No. should be of 12 digits. Please fill Accordingly!!!")
+    }
+    else if(phno.length!=10)
+    {
+        alert("Phone No. should be of 10 digits. Please fill Accordingly!!!")
+    }
+    else if(rationcard.length!=10)
+    {
+        alert("Ration Card No. should be of 10 Alphanumeric Characters. Please fill Accordingly!!!")
+    }
+    else if(voterid.length!=10)
+    {
+        alert("Voter Id should be of 10 Alphanumeric Characters. Please fill Accordingly!!!")
+    }
+    
 }

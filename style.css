@@ -26,15 +26,15 @@ p{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.signup
+.card
 {
     width: 280px;
     padding: 10px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin: 10px;
-    border-radius: 10px;
-    box-shadow:  0px 0px 15px 5px black;
+    border-radius: 15px;
+    box-shadow:  0px 0px 15px 5px rgb(65, 58, 58);
 }
 
 .btn
@@ -54,7 +54,6 @@ p{
 .btn:hover{
     cursor: pointer;
     border: 1px dotted black;
-    font-weight: 55px;
 }
 
 .inp 
@@ -70,6 +69,6 @@ p{
 
 .inp:focus{
     outline:none;
-    border: 1px solid green;
+    border: 2px solid green;
 }
 
